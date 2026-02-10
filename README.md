@@ -2,9 +2,7 @@
 
 ## 📌 Project Overview
 
-**Codolio | Demo Project** is a frontend demo application built to showcase UI features and basic functionality using modern web technologies.
-
-This repository serves as a presentation layer and demo testing ground for Codolio.
+**Codolio | Demo Project** is a frontend demo application built to showcase UI features and basic functionality using modern web technologies. This repository serves as a presentation layer and demo testing ground for Codolio.
 
 
 ## 👨‍💻 Author
@@ -13,17 +11,15 @@ This repository serves as a presentation layer and demo testing ground for Codol
 - **Created For:** Codolio  
 - **Linkedin:** https://www.linkedin.com/in/amulya-shrivastava-11a0a9288/
 - **Live Link:** https://codoliodemo.netlify.app/
----
 
-### Introduction
+## Introduction
 
 The **Interactive Question Management Sheet** is a single-page web application designed to help users organize and manage a hierarchical collection of questions grouped by topics and sub-topics.
 
 The application enables users to dynamically create, edit, delete, and reorder topics, sub-topics, and individual questions through an intuitive drag-and-drop interface. The primary goal is to provide a clean, responsive, and user-friendly experience for maintaining structured learning or assessment content.
 
----
 
-### ✅ Functional Requirements
+## ✅ Functional Requirements
 
 - **Topic Management**
   - Create, edit, and delete topics.
@@ -43,18 +39,15 @@ The application enables users to dynamically create, edit, delete, and reorder t
   ```bash 
   curl --location 'https://node.codolio.com/api/question-tracker/v1/sheet/public/get-sheet-by-slug/striver-sde-sheet'
     ```
----
 
-### 📌 Assumptions
+## 📌 Assumptions
 
 - The application is implemented as a single-page web app.
 - The user interface prioritizes simplicity and usability.
 - Developers are free to design the UI as long as all functional requirements are met (reference: Codolio platform).
 
----
 
-### 📸 Screenshots
----
+## 📸 Screenshots
 
 ![Home Page](./public/Dashboard.png)
 ![Dashboard](./public/Features.png)
@@ -68,10 +61,9 @@ The application enables users to dynamically create, edit, delete, and reorder t
 - 🌐 **Netlify** — Single Page Application hosting  
 
 ### 📁 File Tree: Codolio-Project
----
 
-**Generated:** 2/10/2026, 12:15:37 PM
-**Root Path:** `Your Directory\Codolio-Project`
+- **Generated:** 2/10/2026, 12:15:37 PM
+- **Root Path:** `Your Directory\Codolio-Project`
 
 ![File Structure](./public/File%20Structure.png)
 
@@ -104,20 +96,20 @@ npm run dev
 http://localhost:<PORT NUMBER USED>
 ```
 
-### ✅ Features
----
+## ✅ Features
+
 1. Responsive UI for all screen sizes.
 2. Tailwind-based styling.
 3. Component-driven React architecture.
 4. Fast development with Vite.
 5. Deployed live on Netlify.
    
-### 📬 Contact
----
-For any queries or collaboration:
-📧 Email: amulyashrivastava7@gmail.com
+## 📬 Contact
 
-### ⭐ Support
----
-If you found this project helpful, please consider giving it a ⭐ on GitHub.
-🙌 Thanks for visiting!
+- For any queries or collaboration:
+- 📧 Email: amulyashrivastava7@gmail.com
+
+## ⭐ Support
+
+- If you found this project helpful, please consider giving it a ⭐ on GitHub.
+- 🙌 Thanks for visiting!
