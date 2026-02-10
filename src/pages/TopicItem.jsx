@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Droppable, Draggable } from "@hello-pangea/dnd";
 import SubTopicItem from "./SubTopicItem";
 import useStore from "./useStore";
-const TopicItem = ({ topic, index, isExpanded, onToggle }) => {
+const TopicItem = ({
+  topic,
+  index,
+  isExpanded,
+  onToggle,
+  searchQuery = "",
+}) => {
   const { addSubTopic, updateTopic, deleteTopic, reorderSubTopics } =
     useStore();
   const [isEditing, setIsEditing] = useState(false);
@@ -10,6 +16,17 @@ const TopicItem = ({ topic, index, isExpanded, onToggle }) => {
   const [editTitle, setEditTitle] = useState(topic.title);
   const [newSubTopicTitle, setNewSubTopicTitle] = useState("");
   const [expandedSubTopics, setExpandedSubTopics] = useState({});
+  useEffect(() => {
+    if (searchQuery.trim() && topic.subTopics) {
+      const allExpanded = {};
+      topic.subTopics.forEach((st) => {
+        allExpanded[st.id] = true;
+      });
+      setExpandedSubTopics(allExpanded);
+    } else if (!searchQuery.trim()) {
+      setExpandedSubTopics({});
+    }
+  }, [searchQuery, topic.subTopics]);
   const toggleSubTopic = (subTopicId) => {
     setExpandedSubTopics((prev) => ({
       ...prev,

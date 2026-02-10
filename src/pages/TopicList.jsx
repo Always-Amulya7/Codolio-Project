@@ -18,6 +18,8 @@ const TopicList = ({
         allExpanded[topic.id] = true;
       });
       setExpandedTopics(allExpanded);
+    } else {
+      setExpandedTopics({});
     }
   }, [searchQuery, sheet.topics]);
   const toggleTopic = (topicId) => {
@@ -152,6 +154,7 @@ const TopicList = ({
                     key={topic.id}
                     topic={topic}
                     index={index}
+                    searchQuery={searchQuery}
                     isExpanded={expandedTopics[topic.id] === true}
                     onToggle={() => toggleTopic(topic.id)}
                   />
