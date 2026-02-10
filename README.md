@@ -73,38 +73,7 @@ The application enables users to dynamically create, edit, delete, and reorder t
 **Generated:** 2/10/2026, 12:15:37 PM
 **Root Path:** `Your Directory\Codolio-Project`
 
-├── 📁 dist
-├── 📁 node_modules
-├── 📁 public
-│   ├── 🖼️ Dashboard.png
-│   ├── 🖼️ Features.png
-│   └── 🖼️ favicon.jpg
-├── 📁 src
-│   ├── 📁 components
-│   │   ├── 📄 Calender.jsx
-│   │   ├── 📄 Footer.jsx
-│   │   ├── 📄 Navbar_Primary.jsx
-│   │   ├── 📄 Navbar_Secondary.jsx
-│   │   └── 📄 SortFunc.jsx
-│   ├── 📁 pages
-│   │   ├── 📄 QuestionItem.jsx
-│   │   ├── 📄 SubTopicItem.jsx
-│   │   ├── 📄 TopicItem.jsx
-│   │   ├── 📄 TopicList.jsx
-│   │   ├── ⚙️ sheet.json
-│   │   └── 📄 useStore.js
-│   ├── 📄 App.jsx
-│   ├── 🎨 index.css
-│   └── 📄 main.jsx
-├── 📝 File Structure.md
-├── 📄 LICENSE
-├── 📝 README.md
-├── 🌐 index.html
-├── ⚙️ package-lock.json
-├── ⚙️ package.json
-├── 📄 postcss.config.js
-├── 📄 tailwind.config.js
-└── 📄 vite.config.js
+![File Structure](./public/File%20Structure.png)
 
 ## 🛠️ Setup Instructions
 
